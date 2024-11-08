@@ -1,0 +1,35 @@
+.footer {
+    /* Create a Flex Box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* Add the gradient background */
+    background: linear-gradient(to right, #add8e6, #ffcccb); /* Light Blue to Light Red */
+    color: var(--header-text-color);
+
+    /* Fix */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+/* Dark Theme Footer Gradient */
+[data-theme="dark"] .footer {
+    background: linear-gradient(to right, #4682b4, #ffacaa); /* Darker Blue to Light Red */
+    border-top: 1px solid black;
+}
+
+.footer > button {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--header-text-color);
+
+    cursor: pointer;
+}
+
+.footer > * {
+    margin-left: 1em;
+    margin-right: 1em;
+}

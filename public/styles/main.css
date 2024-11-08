@@ -1,0 +1,42 @@
+/* Handles Light and Dark theme */
+
+/* Default Theme (Light) */
+:root {
+    --background-gradient: linear-gradient(to right, #add8e6, #ffcccb); /* Light Blue to Light Red */
+    --text-color: #000000;
+
+    --header-background-color: #000000;
+    --header-text-color: #ffffff;
+
+    --button-color: #53535380;
+    --button-text-color: #ffffff;
+    --button-border-color: transparent;
+
+    --saves-text-color: #a52a2a;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --background-gradient: linear-gradient(to right, #4682b4, #ffacaa); /* Darker Blue to Light Red */
+    --text-color: #ffffff;
+
+    --header-background-color: #CBCBCB;
+    --header-text-color: #000000;
+
+    --button-color: #53535380;
+    --button-text-color: #ffffff;
+    --button-border-color: transparent;
+
+    --saves-text-color: #a52a2a;
+}
+
+/* Other Themes can be added similarly */
+
+body {
+    /* Set the gradient background */
+    background: var(--background-gradient);
+    color: var(--text-color);
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
